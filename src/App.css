@@ -9,7 +9,7 @@
   padding-left: 130px;
 
 }
-.menu{
+.menu ,.clmenu{
   display: none;
 
 }
@@ -513,7 +513,17 @@ input {
     color: #28254A;
 
   }
-  .menu1
+  .clmenu
+  {
+    display: block;
+    font-size:50px ;
+    position: absolute!important;
+    top: 70px!important;
+    left:  10px!important;
+    color: #28254A;
+
+  }
+  .menu1 
   {
     display: none;
   }
@@ -526,15 +536,14 @@ input {
   }
 
   .mb_menu {
-    display: flex;
-    flex-direction: column!;
-        width: 100% !important;
+    display: block;
+   
+        width: 600px!important;
     height: auto !important;
     background-color: #FFFFFF;
     position: absolute;
-    
-    left: -130px !important;
-    margin-top: 100px !important;
+      left: -130px !important;
+    margin-top: 50px !important;
     text-align: center;
   }
 

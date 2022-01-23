@@ -17,7 +17,7 @@ const Header = () => {
       <h1 className="logo">Jobspot</h1>
       <nav className={active ? "mb_menu" :"menu1"}>
       
-        <ul  >
+        <ul  className='mb_menu'>
            
           <li>Find Jobs</li>
           <li>Career Resources </li><RiArrowDropDownLine className="dw_icon"/>
@@ -28,7 +28,7 @@ const Header = () => {
         
       </nav>
       <button className="up_button">Upload Resume <HiOutlineUpload  className="icon"/> </button>
-      {active ? <AiOutlineCloseCircle className='menu' onClick={() => setActive(false)} /> : <CgMenuRound onClick={() => setActive(true)} /> }
+      {active ? <AiOutlineCloseCircle className='menu' onClick={() => setActive(false)} /> : <CgMenuRound className='clmenu' onClick={() => setActive(true)} /> }
     </div>
   );
 };
